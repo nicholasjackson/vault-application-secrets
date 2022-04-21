@@ -1,0 +1,5 @@
+{
+  "api_key": "{{ with secret "secret/api" }}{{ .Data.data.api_key }}{{ end }}",
+  "db_connection": "default",
+  "timeout": "5s"
+}
